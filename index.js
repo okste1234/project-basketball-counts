@@ -4,38 +4,14 @@ const winning = document.getElementById("winning")
 let countsH = 0
 let countsG = 0
 
-function add1H() {
-    countsH += 1
-    displayH.innerText = countsH
+const addH= (count) => {
+    countsH += count
+    displayH.textContent = countsH
     clicker()
 }
 
-function add2H() {
-    countsH += 2
-    displayH.innerText = countsH
-    clicker()
-}
-
-function add3H() {
-    countsH += 3
-    displayH.innerText = countsH
-    clicker()
-}
-
-function add1G() {
-    countsG += 1
-    displayG.textContent = countsG
-    clicker()
-}
-
-function add2G() {
-    countsG += 2
-    displayG.textContent = countsG
-    clicker()
-}
-
-function add3G() {
-    countsG += 3
+const addG = (count) => {
+    countsG += count
     displayG.textContent = countsG
     clicker()
 }
@@ -58,3 +34,39 @@ function reset() {
     displayG.textContent = countsG
     winning.textContent = `Teams playing Draw 0 : 0`
 }
+
+// function add1H() {
+//     countsH += 1
+//     displayH.innerText = countsH
+//     clicker()
+// }
+
+// function add2H() {
+//     countsH += 2
+//     displayH.innerText = countsH
+//     clicker()
+// }
+
+// function add3H() {
+//     countsH += 3
+//     displayH.innerText = countsH
+//     clicker()
+// }
+
+// function add1G() {
+//     countsG += 1
+//     displayG.textContent = countsG
+//     clicker()
+// }
+
+// function add2G() {
+//     countsG += 2
+//     displayG.textContent = countsG
+//     clicker()
+// }
+
+// function add3G() {
+//     countsG += 3
+//     displayG.textContent = countsG
+//     clicker()
+// }
